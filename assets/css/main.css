@@ -2161,6 +2161,12 @@ input:-webkit-autofill {
 		width: 100%;
 	}
 
+	#myFile {
+		color: #ffffff;
+		border: 2px;
+		border-radius: 1;
+	}
+
 	::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #ffffff;
   opacity: 1; /* Firefox */
@@ -2977,6 +2983,18 @@ input:-webkit-autofill {
 					#header nav ul li a[href="#menu"]:before, #header nav ul li a[href="#menu"]:after {
 						background-size: 1.5em 1.5em;
 					}
+		}
+
+		@media screen and (max-width: 499px) {
+
+			#header nav ul li a[href="#menu"]:before {
+				background-image: inherit;
+				opacity: inherit;
+			}
+
+			#header nav ul li a[href="#menu"]:hover:after {
+				opacity: inherit;
+			}
 
 		}
 
