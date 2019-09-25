@@ -58,7 +58,7 @@
 									<a href="photography.html">
 										<h2>Photography</h2>
 										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+											<p>A series of different photography styles.</p>
 										</div>
 									</a>
 								</article>
@@ -67,9 +67,9 @@
 										<img src="images/videoTN.png" class="videoTN" alt="" />
 									</span>
 									<a href="videos.html">
-										<h2>Videos</h2>
+										<h2>Video</h2>
 										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+											<p>Videos produced and shot by me.</p>
 										</div>
 									</a>
 								</article>
@@ -80,7 +80,7 @@
 									<a href="design.html">
 										<h2>Design</h2>
 										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+											<p>Design ideas and portfolio.</p>
 										</div>
 									</a>
 								</article>
@@ -93,7 +93,7 @@
 						<div class="inner">
 							<section>
 								<h2 class="getintouch">Get in touch</h2>
-								<form method="post" action="#">
+								<form action="POST" data-netlify="true">
 									<div class="fields">
 										<div class="field half">
 											<input type="text" name="name" id="name" placeholder="Name" />
@@ -103,6 +103,12 @@
 										</div>
 										<div class="field">
 											<textarea name="message" id="message" placeholder="Message"></textarea>
+										</div>
+										<div class="field">
+											<input type="file" name="myFile" id="myFile" placeholder="Upload file">
+										</div>
+										<div class="field">
+											<div data-netlify-recaptcha="true"></div>
 										</div>
 									</div>
 									<ul class="actions">
@@ -127,6 +133,5 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
 	</body>
 </html>

@@ -156,7 +156,7 @@ input, select, textarea {
 	}
 
 	p {
-		margin: 0 0 2em 0;
+		margin: 2em 0 2em 0;
 	}
 
 	h1 {
@@ -1841,7 +1841,7 @@ input, select, textarea {
 			display: inline-block;
 			text-align: center;
 			line-height: 2.65em;
-			color: inherit;
+			color: #fff;
 		}
 
 			.icon.style2:before {
@@ -1849,8 +1849,8 @@ input, select, textarea {
 			}
 
 			.icon.style2:hover {
-				color: #f2849e;
-				border-color: #f2849e;
+				background-color: #fff;
+				border-color: #ffffff;
 			}
 
 			.icon.style2:active {
@@ -2573,12 +2573,12 @@ input, select, textarea {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
-		display: flex;
+		display: inline-flex;
 		-moz-flex-wrap: wrap;
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		postiion: relative;
+		position: relative;
 		margin: -2.5em 0 0 -2.5em;
 	}
 
@@ -2755,10 +2755,6 @@ input, select, textarea {
 				opacity: 1;
 			}
 
-		* + .tiles {
-			margin-top: 2em;
-		}
-
 		body.is-preload .tiles article {
 			-moz-transform: scale(0.9);
 			-webkit-transform: scale(0.9);
@@ -2834,7 +2830,7 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		padding: 8em 0 0.1em 0 ;
+		padding: 2em 0 0.1em 0 ;
 	}
 
 	.logo::before{
@@ -2864,7 +2860,7 @@ input, select, textarea {
 
 				#header .logo .symbol img {
 					display: block;
-					width: 2em;
+					width: 3em;
 					height: 2em;
 				}
 
@@ -3340,3 +3336,15 @@ input, select, textarea {
 			}
 
 		}
+
+/* Slick Override */
+
+.slick-next:before, .slick-prev:before {
+    font-family: none !important;
+    font-size: 0px !important;
+    line-height: 1;
+    opacity: .75;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
