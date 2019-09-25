@@ -82,7 +82,7 @@
 						<div class="inner">
 							<section>
 								<h2 class="getintouch">Get in touch</h2>
-								<form method="post" action="#">
+								<form action="POST" data-netlify="true">
 									<div class="fields">
 										<div class="field half">
 											<input type="text" name="name" id="name" placeholder="Name" />
@@ -92,6 +92,12 @@
 										</div>
 										<div class="field">
 											<textarea name="message" id="message" placeholder="Message"></textarea>
+										</div>
+										<div class="field">
+											<input type="file" name="myFile" id="myFile" placeholder="Upload file">
+										</div>
+										<div class="field">
+											<div data-netlify-recaptcha="true"></div>
 										</div>
 									</div>
 									<ul class="actions">
